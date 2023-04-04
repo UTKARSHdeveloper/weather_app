@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" style="padding-top: 0px; margin-top: 0px">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>weather</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/Animated-CSS-Waves-Background-SVG.css"
+    />
+    <link rel="stylesheet" href="assets/css/dh-navbar-centered-brand.css" />
+    <link rel="stylesheet" href="assets/css/Effective-Pricing-Cards.css" />
+    <link rel="stylesheet" href="assets/css/gradient-navbar-styles.css" />
+    <link rel="stylesheet" href="assets/css/gradient-navbar.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/ParticleJs-Customizable-Background.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-md" id="app-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><i class="icon ion-ios-infinite" id="brand-logo"></i></a
+        ><button
+          data-bs-toggle="collapse"
+          class="navbar-toggler"
+          data-bs-target="#navcol-1"
+        >
+          <span class="visually-hidden">Toggle navigation</span
+          ><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About the site</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Global Warming</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contribute</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="pricing8 py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h1 class="mb-3">Weather in Agra</h1>
+            <h6 class="subtitle font-weight-normal">
+              We Offer weather of any city in the world.
+            </h6>
+          </div>
+        </div>
+        <!-- row  -->
+        <div class="row mt-4">
+          <!-- column  -->
+          <div class="col-md-4 ml-auto pricing-box align-self-center">
+            <div class="card mb-4">
+              <div class="card-body p-4 text-center">
+                <h5 class="font-weight-normal">TEMPERATURE</h5>
+                <p class="mt-4">
+                  Temperature is <span id="temp"></span>
+                </p>
+                <p class="mt-4">
+                  Min Temperature is <span id="min_temp"></span>
+                </p>
+                <p class="mt-4">
+                  Max Temperature is <span id="max_temp"></span>
+                </p>
+              </div>
+              <a
+                class="btn btn-info-gradiant p-3 btn-block border-0 text-white"
+                href="#"
+                >CHOOSE PLAN
+              </a>
+            </div>
+          </div>
+          <!-- column  -->
+          <!-- column  -->
+          <div class="col-md-4 ml-auto pricing-box align-self-center">
+            <div class="card mb-4">
+              <div class="card-body p-4 text-center">
+                <h5 class="font-weight-normal">Feel</h5>
+               
+                <p class="mt-4">
+                  Cloud_pct is <span id="cloud_pct"></span>
+                </p>
+                <p class="mt-4">
+                  feels like is <span id="feels_like"></span>
+                </p>
+                <p class="mt-4">
+                  Humidity is <span id="humidity"></span>
+                </p>
+              </div>
+              <a
+                class="btn btn-danger-gradiant p-3 btn-block border-0 text-white"
+                href="#"
+                >CHOOSE PLAN
+              </a>
+            </div>
+          </div>
+          <!-- column  -->
+          <!-- column  -->
+          <div class="col-md-4 ml-auto pricing-box align-self-center">
+            <div class="card mb-4">
+              <div class="card-body p-4 text-center">
+                <h5 class="font-weight-normal">Sun And Wind</h5>
+                
+                <p class="mt-4"> wind speed is <span id="wind_speed"></span></p>
+                <p class="mt-4"> wind degree is <span id="wind_degrees"></span></p>
+                <p class="mt-4"> sunrise is <span id="sunrise"></span></p>
+                <p class="mt-4"> sunset is <span id="sunset"></span></p>
+
+              </div>
+              <a
+                class="btn btn-info-gradiant p-3 btn-block border-0 text-white"
+                href="#"
+                >CHOOSE PLAN
+              </a>
+            </div>
+          </div>
+          <!-- column  -->
+        </div>
+      </div>
+    </div>
+    <h2 class="display-6 text-center mb-4">Other City weather</h2>
+    <div class="svg-container">
+      <div class="waveWrapper waveAnimation">
+        <div class="waveWrapperInner bgTop">
+          <div
+            class="wave waveTop"
+            style="
+              background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png');
+            "
+          ></div>
+        </div>
+        <div class="waveWrapperInner bgMiddle">
+          <div
+            class="wave waveMiddle"
+            style="
+              background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png');
+            "
+          ></div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+          <div
+            class="wave waveBottom"
+            style="
+              background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png');
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th style="width: 34%"></th>
+            <th style="width: 22%">Cloud_pct</th>
+            <th style="width: 22%">Feels_like</th>
+            <th style="width: 22%">Humidity</th>
+            <th style="width: 22%">Max_temp</th>
+            <th style="width: 22%">Min_temp</th>
+            <th style="width: 22%">Sunrise</th>
+            <th style="width: 22%">Sunset</th>
+            <th style="width: 22%">Temp</th>
+            <th style="width: 22%">Wind_degrees</th>
+            <th style="width: 22%">Wind_speed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">Lucknow</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Boston</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">Shanghai</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Kolkata</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/style.js"></script>
+  </body>
+</html>
